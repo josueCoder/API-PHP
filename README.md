@@ -1,3 +1,37 @@
+# **API books**
+
+
+### **Obtener datos con GET**
+- levantar el servidor:
+```
+php -S localhost:8000
+```
+- Realizar pedido del recurso
+```
+curl http://localhost:8000/books -v |jq
+```
+#### Resultado:
+```
+{
+  "1": {
+    "titulo": "Lo que el viento se llevo",
+    "id_autor": 2,
+    "id_genero": 2
+  },
+  "2": {
+    "titulo": "Cien años de soledad",
+    "id_autor": 1,
+    "id_genero": 1
+  },
+  "3": {
+    "titulo": "La ciudad y los perros",
+    "id_autor": 3,
+    "id_genero": 1
+  }
+}
+```
+
+
 
 ### **Insertar datos con POST**
 #### Donde:
